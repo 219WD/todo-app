@@ -180,8 +180,35 @@ form {
 	background-color: var(--azul-hover);
 }
 
+.download {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	padding: 1rem 2rem;
+	background: transparent;
+	border: 1px solid #f29559;
+	color: #f29559;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+.download:hover {
+	background: #f29559;
+	border: 1px solid #23232b;
+	color: #23232b;
+}
+
+.Logo {
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     .card-to-do {
+		margin-top: 5rem;
       width: calc(100% - 5px); 
       padding: 10px; 
     }
@@ -203,4 +230,24 @@ form {
     .btn-add {
       font-size: 14px; 
     }
+	.Logo {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		width: 50px;
+	}
+	.download {
+		width: 50%;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		padding: 0.5rem 1rem;
+		background: transparent;
+		border: 1px solid #f29559;
+		color: #f29559;
+		border-radius: 50px;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: all 0.2s ease-in;
+	}
   }

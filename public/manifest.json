@@ -1,0 +1,16 @@
+{
+    "name": "219 Lista de tareas",
+    "short_name": "219List",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#272A29",
+    "description": "Lista de tareas o todo app.",
+    "icons": [
+      {
+        "src": "/logo.png", 
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
