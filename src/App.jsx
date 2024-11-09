@@ -4,6 +4,7 @@ import { TodoAdd } from "./components/TodoAdd"
 import { useTodo } from "./hooks/useTodo"
 import { Descargar } from "./components/Descargar"
 import "./App.css"
+import { Helmet } from "react-helmet"
 
 
 function App() {
@@ -19,6 +20,27 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "219 Lista de tareas",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "25 de Mayo 123",
+              "addressLocality": "Tucumán",
+              "addressRegion": "T",
+              "postalCode": "4000",
+              "addressCountry": "AR",
+            },
+            "telephone": "+5493816671884",
+            "description":
+              "Lista de tareas o todo app. Hecho por CanepaDev en 219Labs.",
+            "url": "https://219-todo-app.vercel.app/",
+          })}
+        </script>
+      </Helmet>
       <div className="card-to-do">
         <Descargar />
         <h1>Lista de tareas</h1>
